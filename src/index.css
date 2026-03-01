@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-light: #60a5fa;
+  --color-accent: #7c3aed;
+  --color-accent-light: #a78bfa;
+  --color-healthcare: #06b6d4;
+  --color-healthcare-light: #22d3ee;
+  --color-success: #10b981;
+  --color-dark-bg: #0a0a0f;
+  --color-dark-card: #12121a;
+  --color-dark-border: #1e1e2e;
+  --color-light-bg: #ffffff;
+  --color-light-secondary: #f0f4ff;
+  --color-light-card: #ffffff;
+  --color-text-dark: #0f172a;
+  --color-text-muted: #64748b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
