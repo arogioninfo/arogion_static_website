@@ -1,0 +1,11 @@
+# AROGION - Healthcare Technology Platform
+# https://arogion.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://arogion.com/sitemap.xml
+
+# Crawl-delay (optional, be polite)
+Crawl-delay: 1

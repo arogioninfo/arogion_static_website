@@ -4,6 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
+      aria-label="AROGION - Complete Healthcare Management Platform"
       className="relative min-h-screen flex items-center justify-center overflow-hidden
         bg-white dark:bg-[#0a0a0f]"
     >

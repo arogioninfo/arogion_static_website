@@ -16,7 +16,8 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <motion.nav
+    <motion.header
+      role="banner"
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -24,6 +25,7 @@ export default function Navbar() {
         bg-white/80 border-gray-200/60
         dark:bg-[#0a0a0f]/80 dark:border-[#1e1e2e]"
     >
+    <nav aria-label="Main navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
@@ -134,6 +136,7 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </nav>
+    </motion.header>
   )
 }
